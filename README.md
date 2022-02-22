@@ -3,39 +3,39 @@
 0) delete/create files
     A) Delete unnecessary given materials
     B) Create files and link them
-        1) landing page CHECK
+        1) landing page
             a) index.html   CHECK
-                i) link to app.js
-                ii) link to css folder
+                i) link to app.js   CHECK
+                ii) link to css folder  CHECK
             b) app.js   CHECK
             c) fetch-utils.js   CHECK
                 i) link to supabase
             d) render utils.js  CHECK
-        2) Signin
+        2) Signin   CHECK
             a) index.html   CHECK
-                i) link to signin.js
-                ii) link to signin.css
-                iii) link to css folder
+                i) link to signin.js   CHECK  
+                ii) link to signin.css  CHECK
+                iii) link to css folder CHECK
             b) signin.js    CHECK
             c) signin.css   CHECK
-        3) Signup
+        3) Signup   CHECK
             a) index.html   CHECK
-                i) link to signup.js
-                ii) link to signin.css
-                iii) link to css folder
+                i) link to signup.js    CHECK
+                ii) link to signin.css  CHECK
+                iii) link to css folder CHECK
             b) signup.js    CHECK
-        4) workshops
+        4) workshops    CHECK
             a) index.html   CHECK
-                i) link to workshops.js
-                ii) link to workshops.css
-                iii) link to css folder
+                i) link to workshops.js CHECK
+                ii) link to workshops.css   CHECK
+                iii) link to css folder CHECK
             b) workshops.css    CHECK
             c) workshops.js CHECK
-        5) enroll
+        5) enroll   CHECK
             a) index.html   CHECK
-                i) link to enroll.js
-                ii) link to enroll.css
-                iii) link to css folder
+                i) link to enroll.js    CHECK
+                ii) link to enroll.css  CHECK
+                iii) link to css folder CHECK
             b) enroll.css   CHECK
             c) enroll.js    CHECK
 I) Database
