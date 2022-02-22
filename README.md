@@ -75,7 +75,7 @@ II) Pages
         2) displayWorkshops
             a) for loop to render a workshop                CHECK
             b) for loop to render the participants          CHECK
-                i) add eventlistener
+                i) add eventlistener                        CHECK
                 ii) remove from database on click
         3) div to hold workshops                            CHECK
         4) sample div to model renderWorkshop               CHECK
@@ -89,14 +89,15 @@ II) Pages
 III) Functions
     A) Fetch utils                                          CHECK
         1) Get workshops+participants                       CHECK
+        2) delete participants
     B) Render utils                                         CHECK
         1) renderWorkshop(workshop)                         CHECK
             a) takes in workshop object, creates div        CHECK
-    C) Event listeners
+    C) Event listeners                                      CHECK
         1) sign in form                                     CHECK
         2) sign up form                                     CHECK
         3) enroll form                                      CHECK
-        4) on name so can delete
+        4) on name so can delete                            CHECK
 IV) Style
     A) Structure                                            CHECK
         1) miro                                             CHECK
