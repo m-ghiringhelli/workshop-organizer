@@ -1,60 +1,60 @@
 # PLAN
 
 0) delete/create files
-    A) Delete unnecessary given materials
-    B) Create files and link them
-        1) landing page
-            a) index.html   CHECK
-                i) link to app.js   CHECK
-                ii) link to css folder  CHECK
-            b) app.js   CHECK
-            c) fetch-utils.js   CHECK
-                i) link to supabase
-            d) render utils.js  CHECK
-        2) Signin   CHECK
-            a) index.html   CHECK
-                i) link to signin.js   CHECK  
-                ii) link to signin.css  CHECK
-                iii) link to css folder CHECK
-            b) signin.js    CHECK
-            c) signin.css   CHECK
-        3) Signup   CHECK
-            a) index.html   CHECK
-                i) link to signup.js    CHECK
-                ii) link to signin.css  CHECK
-                iii) link to css folder CHECK
-            b) signup.js    CHECK
-        4) workshops    CHECK
-            a) index.html   CHECK
-                i) link to workshops.js CHECK
-                ii) link to workshops.css   CHECK
-                iii) link to css folder CHECK
-            b) workshops.css    CHECK
-            c) workshops.js CHECK
-        5) enroll   CHECK
-            a) index.html   CHECK
-                i) link to enroll.js    CHECK
-                ii) link to enroll.css  CHECK
-                iii) link to css folder CHECK
-            b) enroll.css   CHECK
-            c) enroll.js    CHECK
-I) Database
-    A) Setup supabase tables
-        1) Create workshops table
-            a) id (generated)
-            b) name
-            c) location
-        2) Create participants table
-            a) name
-            b) contact
-            c) workshop_id
-        3) Foreign key to connect workshop_id to workshops.id
-    B) RLS
-        1) (role() = 'authenticated'::text) for all CRUD
-    C) Import into HTML/fetch-utils
-        1) html link
-        2) js url
-        3) js key
+    A) Delete unnecessary given materials                   CHECK
+    B) Create files and link them                           CHECK
+        1) landing page                                     CHECK
+            a) index.html                                   CHECK
+                i) link to app.js                           CHECK
+                ii) link to css folder                      CHECK
+            b) app.js                                       CHECK
+            c) fetch-utils.js                               CHECK
+                i) link to supabase                         CHECK
+            d) render utils.js                              CHECK
+        2) Signin                                           CHECK
+            a) index.html                                   CHECK
+                i) link to signin.js                        CHECK  
+                ii) link to signin.css                      CHECK
+                iii) link to css folder                     CHECK
+            b) signin.js                                    CHECK
+            c) signin.css                                   CHECK
+        3) Signup                                           CHECK
+            a) index.html                                   CHECK
+                i) link to signup.js                        CHECK
+                ii) link to signin.css                      CHECK
+                iii) link to css folder                     CHECK
+            b) signup.js                                    CHECK
+        4) workshops                                        CHECK
+            a) index.html                                   CHECK
+                i) link to workshops.js                     CHECK
+                ii) link to workshops.css                   CHECK
+                iii) link to css folder                     CHECK
+            b) workshops.css                                CHECK
+            c) workshops.js                                 CHECK
+        5) enroll                                           CHECK
+            a) index.html                                   CHECK
+                i) link to enroll.js                        CHECK
+                ii) link to enroll.css                      CHECK
+                iii) link to css folder                     CHECK
+            b) enroll.css                                   CHECK
+            c) enroll.js                                    CHECK
+I) Database                                                 CHECK
+    A) Setup supabase tables                                CHECK
+        1) Create workshops table                           CHECK
+            a) id (generated)                               CHECK
+            b) name                                         CHECK
+            c) location                                     CHECK
+        2) Create participants table                        CHECK
+            a) name                                         CHECK
+            b) contact                                      CHECK
+            c) workshop_id                                  CHECK
+    3) Foreign key to connect workshop_id to workshops.id   CHECK
+    B) RLS                                                  CHECK
+        1) (role() = 'authenticated'::text) for all CRUD    CHECK
+    C) Import into HTML/fetch-utils                         CHECK
+        1) html link                                        CHECK
+        2) js url                                           CHECK
+        3) js key                                           CHECK
 II) Pages
     A) landing
         1) signin button
