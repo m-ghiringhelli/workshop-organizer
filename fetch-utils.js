@@ -24,7 +24,10 @@ export async function enrollParticipant(user) {
     return checkError(response);
 }
 
-// export async function delete
+export async function deleteParticipant(id) {
+    const response = await client.from('enrollees').delete().match({ name: id });
+    return checkError(response);
+}
 
 export async function signupUser(email, password) {
     const response = await client.auth.signUp({ email, password });

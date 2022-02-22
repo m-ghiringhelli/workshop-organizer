@@ -1,4 +1,4 @@
-import { logout, getWorkshops } from '../fetch-utils.js';
+import { logout, getWorkshops, deleteParticipant } from '../fetch-utils.js';
 
 const logoutButton = document.getElementById('logout');
 
@@ -12,32 +12,35 @@ async function displayWorkshops() {
     workshopsContainer.textContent = '';
     for (let workshop of workshops) {
         const workshopDiv = document.createElement('div');
-        const enrolleeDiv = document.createElement('div');
         const title = document.createElement('h3');
         const location = document.createElement('h4');
         const description = document.createElement('p');
+        const enrolleeDiv = document.createElement('div');
     
         workshopDiv.classList.add('workshop');
         title.textContent = workshop.name;
         location.textContent = workshop.location;
         description.textContent = workshop.description;
-    
         
+        workshopDiv.append(title, location, description);
+        workshopsContainer.append(workshopDiv);
+    
         for (let enrollee of workshop.enrollees) {
-            const person = document.createElement('p');
+            const person = document.createElement('div');
+            const name = document.createElement('p');
             const contact = document.createElement('p');
             
-            enrolleeDiv.classList.add('enrollee');
-            enrolleeDiv.addEventListener('click', () => {
-                console.log('clicked');
+            person.classList.add('enrollee');
+            person.addEventListener('click', async () => {
+                await deleteParticipant(enrollee.name);
+                await displayWorkshops();
             });
-            person.textContent = enrollee.name;
+            name.textContent = enrollee.name;
             contact.textContent = enrollee.contact;
-            enrolleeDiv.append(person, contact);
+            person.append(name, contact);
+            enrolleeDiv.append(person);
+            workshopDiv.append(enrolleeDiv);
         }
-        
-        workshopDiv.append(title, location, description, enrolleeDiv);
-        workshopsContainer.append(workshopDiv);
     }
 }
 

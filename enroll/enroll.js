@@ -2,7 +2,8 @@ import {
     checkAuth, 
     logout, 
     getWorkshops,
-    enrollParticipant } from '../fetch-utils.js';
+    enrollParticipant,
+    redirectIfLoggedIn } from '../fetch-utils.js';
 
 const enrollForm = document.getElementById('enroll-form');
 const logoutButton = document.getElementById('logout');
@@ -20,6 +21,7 @@ enrollForm.addEventListener('submit', async (e) => {
         workshop_id: data.get('workshops')
     });
     enrollForm.reset();
+    redirectIfLoggedIn();
 });
 
 window.addEventListener('load', async () => {
