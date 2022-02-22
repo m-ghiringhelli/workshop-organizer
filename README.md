@@ -67,10 +67,10 @@ II) Pages
         1) signin form                                      CHECK
             a) event listener (submit)                      CHECK
             b) import signinUser                            CHECK
-    C) Sign up
-        1) signup form
-            a) event listener
-            b) import signupUser
+    C) Sign up                                              CHECK
+        1) signup form                                      CHECK
+            a) event listener                               CHECK
+            b) import signupUser                            CHECK
     D) Workshops
         1) import renderWorkshop
         2) displayWorkshops
@@ -96,7 +96,7 @@ III) Functions
         4) on name so can delete
 IV) Style
     A) Structure
-        1) miro CHECK
+        1) miro                                             CHECK
     B) Colors
         1) coolors
         2) red yellow orange?
