@@ -42,7 +42,7 @@ function checkError({ data, error }) {
 }
 
 export async function getWorkshops() {
-    const response = await client.from('workshops').select();
+    const response = await client.from('workshops').select(`*, enrollees (*)`);
     
     return checkError(response);
 }
