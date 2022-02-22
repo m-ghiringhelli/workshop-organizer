@@ -1,0 +1,56 @@
+body {
+/* CSS HSL */
+    --xiketic: hsla(231, 82%, 6%, 1);
+    --dark-sienna: hsla(339, 80%, 12%, 1);
+    --rosewood: hsla(354, 93%, 22%, 1);
+    --dark-red: hsla(358, 97%, 31%, 1);
+    --rosso-corsa: hsla(0, 100%, 41%, 1);
+    --vermilion: hsla(12, 98%, 44%, 1);
+    --persimmon: hsla(23, 97%, 46%, 1);
+    --tangerine: hsla(34, 95%, 49%, 1);
+    --orange-web: hsla(39, 96%, 50%, 1);
+    --selective-yellow: hsla(43, 100%, 52%, 1);
+    background: url(../assets/fire.jpg);
+    background-size: auto;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    width: 80%;
+    background-color: hsla(231, 82%, 6%, 0.5);
+    color: var(--selective-yellow);
+    border: 5px solid var(--selective-yellow);
+    border-radius: 30px;
+    padding: 10px;
+    margin: 50px auto 30px auto;
+    margin-top: 50px;
+    text-align: center;
+    font-family: 'Permanent Marker';
+    font-size: 4rem;
+}
+
+button {
+    width: 60%;
+    background-color: hsla(231, 82%, 6%, 0.5);
+    border: 3px solid var(--selective-yellow);
+    margin: 20px auto;
+    color: var(--selective-yellow);
+    font-size: 1.4rem;
+    border-radius: 10px;
+    padding: 20px;
+    font-family: 'Yantramanav';
+    font-weight: 900;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+#signup-button {
+    font-size: 1.2rem;
+    font-weight: 400;
+}
