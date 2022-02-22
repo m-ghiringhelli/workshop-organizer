@@ -57,10 +57,10 @@ I) Database                                                 CHECK
         3) js key                                           CHECK
 II) Pages
     A) landing
-        1) signin button
-            a) <a> to signin
-        2) signup button
-            a) <a> to signup
+        1) signin button                                    CHECK
+            a) <a> to signin                                CHECK
+        2) signup button                                    CHECK
+            a) <a> to signup                                CHECK
         3) check auth
             a) redirect to workshops
     B) Sign in

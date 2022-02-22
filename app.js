@@ -5,16 +5,16 @@ const signupButton = document.getElementById('signup-button');
 signinButton.addEventListener('click', () => {
     console.log('signinclick');
     const user = getUser();
-    if (!user) location.replace('./signin');
+    if (!user) {
+        location.replace('./signin');
+    } else {
+        location.replace('./workshops');
+    }
 });
 
 signupButton.addEventListener('click', () => {
     location.replace('./signup');
 });
-
-// const signInForm = document.getElementById('sign-in');
-// const signInEmail = document.getElementById('sign-in-email');
-// const signInPassword = document.getElementById('sign-in-password');
 
 // const signUpForm = document.getElementById('sign-up');
 // const signUpEmail = document.getElementById('sign-up-email');
