@@ -14,11 +14,15 @@ window.addEventListener('load', async () => {
     for (let workshop of workshops) {
         const container = document.createElement('div');
         const title = document.createElement('h3');
+        const location = document.createElement('h4');
+        const description = document.createElement('p');
 
         container.classList.add('workshop');
         title.textContent = workshop.name;
-        
-        container.append(title);
+        location.textContent = workshop.location;
+        description.textContent = workshop.description;
+
+        container.append(title, location, description);
         workshopsContainer.append(container);
     }
 });
