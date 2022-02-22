@@ -3,41 +3,41 @@
 0) delete/create files
     A) Delete unnecessary given materials
     B) Create files and link them
-        1) landing page
-            a) index.html
+        1) landing page CHECK
+            a) index.html   CHECK
                 i) link to app.js
                 ii) link to css folder
-            b) app.js
-            c) fetch-utils.js
+            b) app.js   CHECK
+            c) fetch-utils.js   CHECK
                 i) link to supabase
-            d) render utils.js
+            d) render utils.js  CHECK
         2) Signin
-            a) index.html
+            a) index.html   CHECK
                 i) link to signin.js
                 ii) link to signin.css
                 iii) link to css folder
-            b) signin.js
-            c) signin.css  
+            b) signin.js    CHECK
+            c) signin.css   CHECK
         3) Signup
-            a) index.html
+            a) index.html   CHECK
                 i) link to signup.js
                 ii) link to signin.css
                 iii) link to css folder
-            b) signup.js
+            b) signup.js    CHECK
         4) workshops
-            a) index.html
+            a) index.html   CHECK
                 i) link to workshops.js
                 ii) link to workshops.css
                 iii) link to css folder
-            b) workshops.css
-            c) workshops.js
-        5) workshopsignup
-            a) index.html
-                i) link to workshopsignup.js
-                ii) link to workshopsignup.css
+            b) workshops.css    CHECK
+            c) workshops.js CHECK
+        5) enroll
+            a) index.html   CHECK
+                i) link to enroll.js
+                ii) link to enroll.css
                 iii) link to css folder
-            b) workshopsignup.css
-            c) workshopsignup.js
+            b) enroll.css   CHECK
+            c) enroll.js    CHECK
 I) Database
     A) Setup supabase tables
         1) Create workshops table
