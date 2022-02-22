@@ -63,10 +63,10 @@ II) Pages
             a) <a> to signup                                CHECK
         3) check auth
             a) redirect to workshops
-    B) Sign in
-        1) signin form
-            a) event listener (submit)
-            b) import signinUser
+    B) Sign in                                              CHECK
+        1) signin form                                      CHECK
+            a) event listener (submit)                      CHECK
+            b) import signinUser                            CHECK
     C) Sign up
         1) signup form
             a) event listener
