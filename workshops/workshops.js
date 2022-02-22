@@ -30,6 +30,7 @@ window.addEventListener('load', async () => {
             
             person.textContent = enrollee.name;
             contact.textContent = enrollee.contact;
+            enrolleeDiv.classList.add('enrollee');
             enrolleeDiv.append(person, contact);
         }
         

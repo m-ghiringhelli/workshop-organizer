@@ -8,7 +8,7 @@ const enrollForm = document.getElementById('enroll-form');
 const logoutButton = document.getElementById('logout');
 
 logoutButton.addEventListener('click', () => {
-    console.log('clicked');
+    logout();
 });
 
 enrollForm.addEventListener('submit', async (e) => {
