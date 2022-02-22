@@ -19,6 +19,11 @@ export function redirectIfLoggedIn() {
     }
 }
 
+export async function enrollUser(user) {
+    const response = await client.from('enrollees').insert(user);
+    return checkError(response);
+}
+
 export async function signupUser(email, password) {
     const response = await client.auth.signUp({ email, password });
 
