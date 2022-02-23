@@ -11,27 +11,36 @@
     <link rel="stylesheet" href="../styles/reset.css">
     <link rel="stylesheet" href="../styles/style.css">
     <link rel="stylesheet" href="../styles/home.css">
-    <link rel="stylesheet" href="./enroll.css">
+    <link rel="stylesheet" href="../workshops/workshops.css">
     <title></title>
 </head>
 <body>
-    <button id="logout">logout</button>
-    <h1>enroll</h1>
+    <header>
+        <h1>enroll</h1>
+        <div id="header-bottom">
+            <button id="logout">logout</button>
+            <a href="../workshops/">
+                <div id="enroll">
+                    workshops
+                </div>
+            </a>
+        </div>
+    </header>
     <form id="enroll-form">
         <label>
             your name:
-            <input type="text" name="name" id="name">
         </label>
+        <input type="text" name="name" id="name" placeholder="name">
         <label>
             contact info:
-            <input type="text" name="contact" id="contact">
         </label>
+        <input type="text" name="contact" id="contact" placeholder="contact">
         <label>
             which workshop would you like to sign up for?
-            <select name="workshops" id="workshops">
-            </select>
         </label>
-        <button>sign up</button>
+        <select name="workshops" id="workshops" class="select">
+        </select>
+        <button id="sign-in-submit">sign up</button>
     </form>
     <script type="module" src="./enroll.js"></script>
 </body>

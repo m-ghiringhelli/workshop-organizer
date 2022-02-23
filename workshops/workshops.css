@@ -115,7 +115,11 @@ header a {
     margin: 5px;
     background-color: hsla(0, 0%, 100%, 0.7);
     padding: 10px 10px 20px 10px;
+}
 
+.enrollee:hover {
+    cursor: pointer;
+    background-color: hsla(0, 0%, 80%, 0.7);
 }
 
 .enrollee p {
@@ -126,4 +130,72 @@ header a {
 .enrollee span {
     font-family: 'Yantramanav';
     font-weight: 300;
+}
+
+#enroll-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid var(--selective-yellow);
+    width: 70%;
+    max-width: 450px;
+    margin: 50px auto;
+    background-color: hsla(12, 98%, 44%, 0.5);
+    padding: 20px 10px;
+    border-radius: 20px;
+}
+
+label {
+    font-size: 1.2rem;
+    font-family: 'Merriweather';
+    font-weight: 700;
+    color: hsla(43, 100%, 80%, 1);
+    padding: 20px;
+}
+
+input {
+    padding: 10px;
+    width: 90%;
+    font-size: 1.2rem;
+    margin: 10px;
+    color: var(--rosewood);
+    font-family: 'Yantramanav';
+    font-weight: 100;
+    border: 3px solid var(--selective-yellow);
+    border-radius: 10px;
+}
+
+input:focus {
+    outline: none !important;
+    border: 3px solid var(--vermilion);
+}
+
+#sign-in-submit {
+    background-color: var(--rosso-corsa);
+    border: 3px solid var(--selective-yellow);
+    border-radius: 20px;
+    color: white;
+    font-weight: 400;
+    font-family: 'Merriweather';
+    margin-top: 40px;
+    padding: 20px;
+}
+
+#sign-in-submit:hover {
+    background-color: hsla(0, 100%, 30%, 1);
+    color: hsla(0, 0%, 90%, 1);
+}
+
+select {
+    background-color: hsla(231, 82%, 6%, 0.4);
+    font-size: 1.4rem;
+    color:hsla(43, 100%, 90%, 1);
+    font-family: 'Yantramanav';
+    border-radius: 10px;
+}
+
+select:focus {
+    outline: none !important;
+    border: 3px solid var(--selective-yellow);
 }
