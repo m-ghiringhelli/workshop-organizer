@@ -1,6 +1,8 @@
-import { logout, getWorkshops, deleteParticipant } from '../fetch-utils.js';
+import { logout, getWorkshops, deleteParticipant, checkAuth } from '../fetch-utils.js';
 
 const logoutButton = document.getElementById('logout');
+
+checkAuth();
 
 logoutButton.addEventListener('click', () => {
     logout();
@@ -18,9 +20,10 @@ async function displayWorkshops() {
         const enrolleeDiv = document.createElement('div');
     
         workshopDiv.classList.add('workshop');
-        title.textContent = workshop.name;
+        title.textContent = workshop.name.toUpperCase();
         location.textContent = workshop.location;
         description.textContent = workshop.description;
+        enrolleeDiv.classList.add('enrollee-div');
         
         workshopDiv.append(title, location, description);
         workshopsContainer.append(workshopDiv);
@@ -28,7 +31,7 @@ async function displayWorkshops() {
         for (let enrollee of workshop.enrollees) {
             const person = document.createElement('div');
             const name = document.createElement('p');
-            const contact = document.createElement('p');
+            const contact = document.createElement('span');
             
             person.classList.add('enrollee');
             person.addEventListener('click', async () => {
