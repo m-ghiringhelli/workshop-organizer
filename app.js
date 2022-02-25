@@ -3,7 +3,6 @@ const signinButton = document.getElementById('signin-button');
 const signupButton = document.getElementById('signup-button');
 
 signinButton.addEventListener('click', () => {
-    console.log('signinclick');
     const user = getUser();
     if (!user) {
         location.replace('./signin');

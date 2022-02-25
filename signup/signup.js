@@ -1,4 +1,4 @@
-import { redirectIfLoggedIn, signupUser, logout } from '../fetch-utils.js';
+import { redirectIfLoggedIn, signupUser, } from '../fetch-utils.js';
 
 const signUpForm = document.getElementById('sign-up');
 const signUpEmail = document.getElementById('sign-up-email');
