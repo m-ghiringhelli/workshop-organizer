@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&family=Permanent+Marker&family=Yantramanav:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/home.css">
+    <link rel="stylesheet" href="../workshops/workshops.css">
+    <title></title>
+</head>
+<body>
+    <header>
+        <h1>enroll</h1>
+        <div id="header-bottom">
+            <button id="logout">logout</button>
+            <a href="../workshops/">
+                <div id="enroll">
+                    workshops
+                </div>
+            </a>
+        </div>
+    </header>
+    <form id="enroll-form">
+        <label>
+            your name:
+        </label>
+        <input type="text" name="name" id="name" placeholder="name">
+        <label>
+            contact info:
+        </label>
+        <input type="text" name="contact" id="contact" placeholder="contact">
+        <label>
+            which workshop would you like to sign up for?
+        </label>
+        <select name="workshops" id="workshops" class="select">
+        </select>
+        <button id="sign-in-submit">sign up</button>
+    </form>
+    <script type="module" src="./enroll.js"></script>
+</body>
+</html>

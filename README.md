@@ -1,26 +1,107 @@
-## The Golden Rule:
+# PLAN
 
-🦸 🦸‍♂️ `Stop starting and start finishing.` 🏁
-
-If you work on more than one feature at a time, you are guaranteed to multiply your bugs and your anxiety.
-
-## Making a plan
-
-1. **Make a drawing of your app. Simple "wireframes"**
-1. **Once you have a drawing, name the HTML elements you'll need to realize your vision**
-1. **For each HTML element ask: Why do I need this?**
-1. **Once we know _why_ we need each element, think about how to implement the "Why" as a "How"**
-1. **Find all the 'events' (user clicks, form submit, on load etc) in your app. Ask one by one, "What happens when" for each of these events. Does any state change?**
-1. **Think about how to validate each of your features according to a Definition of Done**
-1. **Consider what features _depend_ on what other features. Use this dependency logic to figure out what order to complete tasks.**
-
-Additional considerations:
-
--   Ask: which of your HTML elements need to be hard coded, and which need to be dynamically generated?
--   Consider your data model.
-    -   What kinds of objects (i.e., Dogs, Friends, Todos, etc) will you need?
-    -   What are the key/value pairs?
-    -   What arrays might you need?
-    -   What needs to live in a persistence layer?
--   Is there some state we need to initialize?
--   Ask: should any of this work be abstracted into functions? (i.e., is the work complicated? can it be resused?)
+0) delete/create files                                      CHECK
+    A) Delete unnecessary given materials                   CHECK
+    B) Create files and link them                           CHECK
+        1) landing page                                     CHECK
+            a) index.html                                   CHECK
+                i) link to app.js                           CHECK
+                ii) link to css folder                      CHECK
+            b) app.js                                       CHECK
+            c) fetch-utils.js                               CHECK
+                i) link to supabase                         CHECK
+            d) render utils.js                              CHECK
+        2) Signin                                           CHECK
+            a) index.html                                   CHECK
+                i) link to signin.js                        CHECK  
+                ii) link to signin.css                      CHECK
+                iii) link to css folder                     CHECK
+            b) signin.js                                    CHECK
+            c) signin.css                                   CHECK
+        3) Signup                                           CHECK
+            a) index.html                                   CHECK
+                i) link to signup.js                        CHECK
+                ii) link to signin.css                      CHECK
+                iii) link to css folder                     CHECK
+            b) signup.js                                    CHECK
+        4) workshops                                        CHECK
+            a) index.html                                   CHECK
+                i) link to workshops.js                     CHECK
+                ii) link to workshops.css                   CHECK
+                iii) link to css folder                     CHECK
+            b) workshops.css                                CHECK
+            c) workshops.js                                 CHECK
+        5) enroll                                           CHECK
+            a) index.html                                   CHECK
+                i) link to enroll.js                        CHECK
+                ii) link to enroll.css                      CHECK
+                iii) link to css folder                     CHECK
+            b) enroll.css                                   CHECK
+            c) enroll.js                                    CHECK
+I) Database                                                 CHECK
+    A) Setup supabase tables                                CHECK
+        1) Create workshops table                           CHECK
+            a) id (generated)                               CHECK
+            b) name                                         CHECK
+            c) location                                     CHECK
+        2) Create participants table                        CHECK
+            a) name                                         CHECK
+            b) contact                                      CHECK
+            c) workshop_id                                  CHECK
+    3) Foreign key to connect workshop_id to workshops.id   CHECK
+    B) RLS                                                  CHECK
+        1) (role() = 'authenticated'::text) for all CRUD    CHECK
+    C) Import into HTML/fetch-utils                         CHECK
+        1) html link                                        CHECK
+        2) js url                                           CHECK
+        3) js key                                           CHECK
+II) Pages
+    A) landing
+        1) signin button                                    CHECK
+            a) <a> to signin                                CHECK
+        2) signup button                                    CHECK
+            a) <a> to signup                                CHECK
+    B) Sign in                                              CHECK
+        1) signin form                                      CHECK
+            a) event listener (submit)                      CHECK
+            b) import signinUser                            CHECK
+    C) Sign up                                              CHECK
+        1) signup form                                      CHECK
+            a) event listener                               CHECK
+            b) import signupUser                            CHECK
+    D) Workshops                                            CHECK
+        2) displayWorkshops                                 CHECK
+            a) for loop to render a workshop                CHECK
+            b) for loop to render the participants          CHECK
+                i) add eventlistener                        CHECK
+                ii) remove from database on click           CHECK
+        3) div to hold workshops                            CHECK
+        4) sample div to model renderWorkshop               CHECK
+        5) link to signout                                  CHECK
+        6) link to enroll                                   CHECK
+    E) Enroll                                               CHECK
+        1) enroll form                                      CHECK
+            a) dropdown menu                                CHECK
+            b) dynamically generated by data                CHECK
+            c) submit takes to workshops                    CHECK
+III) Functions                                              CHECK
+    A) Fetch utils                                          CHECK
+        1) Get workshops+participants                       CHECK
+        2) delete participants                              CHECK
+    B) Render utils                                         CHECK
+        1) renderWorkshop(workshop)                         CHECK
+            a) takes in workshop object, creates div        CHECK
+    C) Event listeners                                      CHECK
+        1) sign in form                                     CHECK
+        2) sign up form                                     CHECK
+        3) enroll form                                      CHECK
+        4) on name so can delete                            CHECK
+IV) Style
+    A) Structure                                            CHECK
+        1) miro                                             CHECK
+    B) Colors
+        1) coolors
+        2) red yellow orange?
+    C) Aesthetics
+        1) background picture?
+        2) icons / images?
